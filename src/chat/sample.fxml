@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.Controller">
+    <TextArea fx:id="mainTextArea" editable="false" VBox.vgrow="ALWAYS" />
+    <AnchorPane prefHeight="40">
+        <TextField fx:id="sendField" layoutX="7" layoutY="7" onAction="#btnOneClickAction" prefHeight="25" prefWidth="177" promptText="Написать сообщение..." AnchorPane.leftAnchor ="7" AnchorPane.rightAnchor="95"/>
+        <Button fx:id="sendButton" alignment="CENTER_RIGHT" defaultButton="true" layoutX="197" layoutY="7" onAction="#btnOneClickAction" prefHeight="25" prefWidth="77" text="Отправить" BorderPane.alignment="BASELINE_RIGHT" AnchorPane.rightAnchor="7"/>
+    </AnchorPane>
+</VBox>
