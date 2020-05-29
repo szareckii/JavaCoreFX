@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<GridPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.Controller" hgap="10" vgap="10">
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+    <stylesheets>
+        <URL value="@/calc/style.css"/>
+    </stylesheets>
+
+        <TextField fx:id="calcField" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="6"/>
+        <Button fx:id="plusButton" onAction="#btnOneClickAction" text="+" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button fx:id="minusButton" onAction="#btnOneClickAction" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button fx:id="multiplyButton" onAction="#btnOneClickAction" text="*" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Button fx:id="dividedButton" onAction="#btnOneClickAction" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+        <Button fx:id="clearButton" onAction="#btnOneClickAction" text="C" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+        <Button fx:id="equallyButton" onAction="#btnOneClickAction" text="=" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
+        <Label  fx:id="errorLabel" text="" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="6"/>
+</GridPane>
+
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.Controller">-->
+<!--    <children>-->
+<!--        <VBox alignment="center" layoutY="-14.0" prefHeight="148.0" prefWidth="177.0">-->
+<!--            <TextField fx:id="sendField" onAction="#btnOneClickAction" prefHeight="13.0" prefWidth="177.0" text="0" AnchorPane.leftAnchor="7" AnchorPane.rightAnchor="95" />-->
+<!--            <HBox>-->
+<!--                <Button fx:id="plusButton" alignment="CENTER_RIGHT" defaultButton="true" layoutX="197" layoutY="7" onAction="#btnOneClickAction" text="+" />-->
+<!--                <Button fx:id="mimusButton" alignment="CENTER_RIGHT" defaultButton="true" layoutX="197" layoutY="7" onAction="#btnOneClickAction" text="-" />-->
+<!--                <Button fx:id="multiplyButton" alignment="CENTER_RIGHT" defaultButton="true" layoutX="197" layoutY="7" onAction="#btnOneClickAction" text="*" />-->
+<!--                <Button fx:id="divededButton" alignment="CENTER_RIGHT" defaultButton="true" layoutX="197" layoutY="7" onAction="#btnOneClickAction" text="/" />-->
+<!--                <Button fx:id="clearButton" alignment="CENTER_RIGHT" defaultButton="true" layoutX="197" layoutY="7" onAction="#btnOneClickAction" text="C" />-->
+<!--                <Button fx:id="equallyButton" alignment="CENTER_RIGHT" defaultButton="true" layoutX="197" layoutY="7" onAction="#btnOneClickAction" text="=" />-->
+<!--            </HBox>-->
+<!--        </VBox>-->
+<!--    </children>-->
+<!--</AnchorPane>-->
